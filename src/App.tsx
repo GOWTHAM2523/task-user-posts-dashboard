@@ -9,15 +9,15 @@ function NotificationToast() {
   if (!notification) return null;
 
   return (
-    <div className="notification-toast">
-      <div className="glass-effect px-6 py-4 rounded-xl shadow-2xl border border-white/20">
-        <div className="flex items-center">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mr-3">
-            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    <div className="toast-notification">
+      <div className="glass-card px-8 py-5 rounded-2xl shadow-2xl border-l-4 border-green-500">
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center shadow-lg">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <span className="text-gray-800 font-semibold">{notification}</span>
+          <span className="text-gray-800 font-bold text-lg">{notification}</span>
         </div>
       </div>
     </div>
